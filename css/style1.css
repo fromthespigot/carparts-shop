@@ -1,0 +1,464 @@
+/* master css */
+@import url("reset.css");
+@charset "UTF-8";
+
+/* font imports */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+
+/*
+0001 - global styles
+0002 - header styles
+0003 - parallax
+0004 - page structure
+0005 - headings
+0006 - social
+0007 - footer
+0008 - products
+0009 - responsive media queries
+*/
+
+
+/* -----------------------------------*/
+/* ---------->>> 0001 GLOBAL <<<-----------*/
+/* -----------------------------------*/
+body {
+	margin:0;
+	font-size: 16px;
+	height: auto;
+	font-family: 'Rubik', sans-serif;
+}
+a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #DDDDDD;
+	text-decoration: none;
+}
+
+/* -----------------------------------*/
+/* ---------->>> 0002 HEADER <<<-----------*/
+/* -----------------------------------*/
+header {
+	height: 70px;
+	position: fixed;
+	top: 0px;
+	z-index: 9999999;
+}
+.navbar-brand {
+	width: 65%;
+}
+.navbar-nav {
+	padding-top: 10px;
+}
+.navbar-default {
+	padding-top: 20px;
+	border-bottom: 6px solid #FF0020;
+	background-color: #262635;
+}
+nav li {
+	font-family: 'Roboto', sans-serif;
+	color: #000000;
+	text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+	padding: 5px 15px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #DDDDDD;
+	padding: 5px 15px;
+}
+.navbar-default .navbar-nav > li > a:active {
+	color: #DDDDDD;
+	padding: 5px 15px;
+}
+.logo {
+	width: 100%;
+}
+/* ------------------------------*/
+/* ---------->>> 0003 PARALLAX <<-------*/
+/* -----------------------------------*/
+.hsContainer {
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	opacity: 1;
+}
+.hsContent {
+	max-width: 450px;
+	margin: -150px auto auto;
+	display: table-cell;
+	vertical-align: middle;
+	color: #ebebeb;
+	padding: 0 8%;
+	text-align: center;
+}
+.hsContent h2 {
+	color: #000000;
+	font-size: 45px;
+	line-height: 48px;
+	margin-bottom: 12px;
+}
+.bcg {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+/* Slide 1 */
+#bcg {
+	background-image:url('../images/slider-01.jpg');
+	height: 552px;
+}
+.bcg h2 {
+	color: #FFFFFF;
+}
+/* Slide 2 */
+#slide-2 .bcg {
+	background-image:url('../images/testimonialbg.jpg');
+	height: 465px;
+	background-attachment: fixed;
+}
+/* General */
+#textslide h2 {
+	max-width: 70%;
+	margin: -5% auto 0 auto;
+	padding: 0 auto;
+	text-align: center;
+}
+#textslide p {
+	margin: 7% auto 0 auto;
+	font-size: 24px;
+}
+
+/* -----------------------------------*/
+/* ---------->>> 0004 PAGE STRUCTURE <<<-----------*/
+/* -----------------------------------*/
+.attention {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.blurb {
+	width: 100%;
+	border-bottom: 6px solid #FF0020;
+}
+.blurbtitle {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin: 20px 0;
+	font-size: 20px;
+	color: #333345;
+	line-height: 24px;
+	height: 40px;
+}
+.blurbtitle span {
+	color: #9A9A9A;
+}
+.blurbdetail {
+	padding: 0 10px;
+}
+
+/* -----------------------------------*/
+/* ---------->>> 0005 HEADINGS <<<-----------*/
+/* -----------------------------------*/
+h2 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin: 15px 0;
+	font-size: 36px;
+	color: #333345;
+	line-height:44px;
+	height: 35px;
+}
+h3 {
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	margin: 15px 0;
+	font-size: 32px;
+	color:#333345;
+	line-height: 40px;
+}
+/* -----------------------------------*/
+/* ---------->>> 0006  SOCIAL <<<-----------*/
+/* -----------------------------------*/
+.socialtitle {
+	margin-top: 100px;
+	margin-bottom: 40px;
+}
+.socialicons {
+	margin: 40px auto 100px auto;
+	padding: 0 auto 0 auto;
+	text-align: center;
+}
+.fa {
+	padding: 0 12px;
+	color: #AAAAAA;
+}
+.fa:hover {
+	padding: 0 12px;
+	color: #FF4020;
+}
+
+/* -----------------------------------*/
+/* ---------->>> 0007 FOOTER <<<-----------*/
+/* -----------------------------------*/
+footer {
+	border-bottom: 3px solid #FF0020;
+	background-color: #262635;
+	height: 40px;
+}
+.fa-copyright {
+	padding: 0;
+}
+.copyright {
+	text-align: left;
+	padding-top: 14px;
+	font-size: 8px;
+	color: #FFFFFF;
+}
+.credits {
+	text-align: right;
+	padding-top: 14px;
+	font-size: 8px;
+	color: #FFFFFF;
+}
+
+/* -----------------------------------*/
+/* ---------->>> 0008 PRODUCTS <<<--------------*/
+/* -----------------------------------*/
+.productmini {
+	width: 70%;
+}
+.shopMore {
+	margin-top: 35px;
+}
+.itemtitle h2 {
+	margin-bottom: 70px;
+}
+.itemproduct h2 {
+	margin: 2%;
+}
+.itemdescription {
+	padding: 0% 2%;
+	margin-bottom: 80px;
+}
+.itemdescription p {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 700;
+	margin: 20px 0;
+}
+.btn-option {
+	margin: 5px;
+}
+.btn-price {
+	margin: 10px 10px 5px 10px;
+	padding: 8px 30px;
+}
+
+/* ---------------------------------------*/
+/* ---------->>> 0009 RESPONSIVE MEDIA QUERIES <<<-----------*/
+/* -----------------------------------*/
+/* ------------ TABLET ----------- */
+@media (max-width: 1560px){
+	#textslide h2 {
+		max-width: 70%;
+		margin: -7% auto 0 auto;
+		padding: 0 auto;
+		text-align: center;
+	}
+	#textslide p {
+		margin: 10% auto 0 auto;
+		font-size: 24px;
+	}
+}
+@media (max-width: 1425px){
+	#textslide h2 {
+		max-width: 70%;
+		margin: -7% auto 0 auto;
+		padding: 0 auto;
+		text-align: center;
+	}
+	#textslide p {
+		margin: 11% auto 0 auto;
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 1300px){
+	#textslide h2 {
+		max-width: 70%;
+		margin: -8% auto 0 auto;
+		padding: 0 auto;
+		text-align: center;
+	}
+	#textslide p {
+		margin: 12% auto 0 auto;
+		font-size: 24px;
+	}
+}
+@media (min-width: 769px){
+
+/* ------------ PHONE ----------- */
+
+@media (max-width: 768px){
+	body, html {
+		height: auto
+	}
+	.bcg {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+		height: 100%;
+		width: 100%;
+	}
+	section {
+		min-wdith: 768px;
+		height: 600px;
+	}
+	.hsContainer {
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+	.hsContent {
+		max-width: 700px;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		text-align: left;
+		padding: 0;
+	}
+	.navbar-header {
+		width: auto;
+	}
+	.navbar-brand {
+		width: 70%;
+	}
+	.navbar-default {
+		padding-top: 0px;
+	}
+	.logo {
+		width: 100%;
+	}
+	.hsContent h2 {
+		color: #FFFFFF;
+		font-size: 24px;
+		line-height: 30px;
+		margin-bottom: 12px;
+	}
+	.hsContent p {
+		width: 400px;
+	}
+	#slide-1 .hsContent {
+		bottom: 200px;
+		top: autp;
+		margin-left: -80px;
+	}
+	#slide-2 .hsContent {
+		margin-left: -340px;
+		top: auto;
+	}
+	#slide-2 h2 {
+		position: fixed;
+		top: 70%;
+	}
+	#slide-3 .hsContent {
+		margin-left: -300px;
+	}
+	#slide-4 .hsContent {
+		margin-left: -340px;
+		position: fixed;
+	}
+	#slide-4 h2 {
+		background: none;
+	}
+	h3 {
+		font-size: 15px;
+		color: #eeeeee;
+	}
+}
+/* trickshots */
+@media (max-width: 488px){
+	footer {
+		height: 58px;
+	}
+}
+
+
+
+
+
+
+/* Medium devices (tablets, 768px and up) */
+/*@media only screen and (min-width: 768px) {
+
+    .bcg {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+    }
+    section {
+        min-width: 768px;
+        height: 600px;
+    }
+    .hsContainer {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .hsContent {
+        max-width: 700px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: left;
+        padding: 0;
+    }
+        .hsContent h2  {
+            font-size: 35px;
+            line-height: 38px;
+        }
+        .hsContent p {
+            width: 400px;
+        }
+    #slide-1 .hsContent {
+        bottom: 200px;
+        top: auto;
+        margin-left: -80px;
+    }
+    #slide-2 .hsContent {
+        margin-left: -340px;
+        top: auto;
+    }
+    #slide-2 h2 {
+        position: fixed;
+        top: 70%;
+    }
+    #slide-3 .hsContent {
+        margin-left: -300px;
+    }
+    #slide-4 .hsContent {
+        margin-left: -340px;
+        position: fixed;
+    }
+        #slide-4 h2 {
+            background: none;
+        }
+
+}
+*/
